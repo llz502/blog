@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * { 
+            box-sizing:border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+        .wrapper{
+            max-width:1360px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .header>.logo {
+            margin: 54px auto 40px;
+            width: 73px;
+            height: 73px;
+            border-radius: 50%;
+            
+            overflow: hidden;
+        }
+
+        .header>.logo>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .header>nav {
+            display: inline-block;
+        }
+
+        .header>nav>a {
+            float: left;
+            margin: 0 16px;
+            width: 128px;
+            line-height: 16px;
+            padding: 4px 0;
+            border-radius: 10px;
+          
+        }
+
+        .clearfix::after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+
+        .banner {
+            margin: 35px auto 0;
+            
+            text-align: center;
+            background-image: url(https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3041403888,804723886&fm=23&gp=0.jpg);
+        }
+
+        .banner>h2 {
+            margin: 75px auto 0;
+            width: 376px;
+            height: 40px;
+            border-radius: 10px;
+                    }
+
+        .banner>h2:nth-child(2) {
+            display: none;
+        }
+
+        .banner>p:nth-child(3) {
+            margin: 35px auto 0;
+            width: 536px;
+            height: 20px;
+            border-radius: 10px;
+           
+        }
+
+        .banner>p:nth-child(4) {
+            margin: 19px auto 102px;
+            width: 536px;
+            height: 20px;
+            border-radius: 10px;
+            
+        }
+
+        ul {
+            margin-top: 42px;
+            padding: 0 180px;
+        }
+
+        ul>li {
+            float: left;
+            margin: 0 16px 32px;
+        }
+
+        ul>li>.img {
+
+            width: 288px;
+            height: 181px;
+            
+            overflow: hidden;
+        }
+
+        ul>li>.img>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        ul>li>h3 {
+            margin-top: 19px;
+            width: 204px;
+            height: 24px;
+            line-height: 24px;
+        }
+
+        ul>li>p {
+            margin-top: 14px;
+            max-width: 288px;
+            height: 4em;
+            overflow: hidden ;
+            text-overflow:ellipsis;
+        }
+
+        @media (max-width:640px) {
+
+
+            ul {
+                padding: 0;
+            }
+        }
+
+        @media (max-width:320px) {
+            .header>.logo {
+                margin: 61px auto 34px;
+            }
+
+            .header>nav>a:nth-child(3) {
+                margin: 24px 16px 0;
+            }
+            .header>nav>a:nth-child(4) {
+
+                margin: 24px 16px 0;
+            }
+            .banner>h2 {
+                margin-top: 56px;
+                width: 200px;
+            }
+            .banner h2:nth-child(2) {
+                margin-top: 19px;
+                display: block;
+            }
+            .banner>p:nth-child(3) {
+                margin-top: 46px;
+                width: 250px;
+            }
+            .banner>p:nth-child(4) {
+                margin-bottom: 51px;
+                width: 250px;
+            }
+            ul {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>JS Bin</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="header clearfix">
+                <div class="logo">
+                        <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=742476185,476691233&fm=23&gp=0.jpg" alt="">
+                </div>
+                <nav class="clearfix">
+                    <a href="">御宅族</a>
+                    <a href="">怪蜀黍</a>
+                    <a href="">天然呆</a>
+                    <a href="">软妹子</a>
+                </nav>
+            </div>
+            <div class="banner">
+                <h2>二次元</h2>
+                <h2>-----------------------------</h2>
+                <p>
+                如漫画或动画中的人物，因其二维空间的本质，
+                </p>
+                <p>
+                而常被称为“二次元角色”
+                </p>
+                
+            </div>
+            <ul>
+                <li>
+                    <div class="img">
+                        <img src="http://img3.imgtn.bdimg.com/it/u=1586916911,2984815748&fm=23&gp=0.jpg" alt="">
+                    </div>
+                    <h3>angel beats</h3>
+                    <p>作品主题围绕着“人生”展开，以死后的世界为舞台，讲述了反抗着命运的少男少女们的故事。</p>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=567841819,2137506139&fm=23&gp=0.jpg" alt="">
+                    </div>
+                    <h3>clannad</h3>
+                    <p>“光玉”为心愿之光，是人们的心愿在另一个世界的影像。拥有着爱的人，能够看到“光玉”。。</p>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1728747297,882237579&fm=23&gp=0.jpg" alt="">
+                    </div>
+                    <h3>kanon</h3>
+                    <p>重要的记忆、曾经在这个街道上认识的人、被遗忘的约定，虽然是在寒冷的冬天，还是开始慢慢的解冻。</p>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=386921239,3367306357&fm=23&gp=0.jpg" alt="">
+                    </div>
+                    <h3>未闻花开</h3>
+                    <p>用直达内心的笔触描写青春期的少男少女在面对恋情、友情、纠葛时，有欢欣笑容也有伤心泪水的青春</p>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1585702768,2108713464&fm=23&gp=0.jpg" alt="">
+                    </div>
+                    <h3>罪恶王冠</h3>
+                    <p>少女名为楪祈。她是一名为理想葬送了自己的歌姬少女。</p>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2793850363,1547689020&fm=23&gp=0.jpg" alt="">
+                    </div>
+                    <h3>精灵使的剑舞</h3>
+                    <p>只有冰清玉洁的少女才能享有的特权－－「精灵契约」。</p>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1616149872,2326016625&fm=23&gp=0.jpg" alt="">
+                    </div>
+                    <h3>狐妖小红娘</h3>
+                    <p>根据古典小说记载,世上有人有妖,妖会与人相恋,妖寿命千万年,人的寿命有限,人死了,妖活着.人会投胎转世,但投胎以后,不记得上辈子的爱.</p>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="http://img3.imgtn.bdimg.com/it/u=2849144640,849461643&fm=23&gp=0.jpg" alt="">
+                    </div>
+                    <h3>刀剑神域</h3>
+                    <p>故事发生在近未来的2022年，由电子机器制造商“ARGUS”开发出的“NERvGear”，让使用者能连结虚拟世界，实现完全的虚拟实境。</p>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="http://img2.imgtn.bdimg.com/it/u=3296665791,665219705&fm=23&gp=0.jpg" alt="">
+                    </div>
+                    <h3>灼眼的夏娜</h3>
+                    <p>平时总爱发呆,有点弱气的男主角坂井悠二和往常一样过着平凡的日子,怪物的突然出现打破了他原有的生活.这个时候,出现了一位自称"炎发灼眼的讨伐者"的少女</p>
+                </li>
+            </ul>
+        </div>
+    </body>
+
+    </html>
+</body>
+
+</html>
