@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+      <style>
+    *{
+      box-sizing:border-box;
+    }
+    body{
+      margin:0;
+      padding:0;
+    }
+    .nav{
+      display:flex;
+      justify-content:center;
+      background:#F06153;
+      padding:0 25px;
+      margin:10px auto;
+      max-width:632px;
+      border-radius:10px;
+      box-shadow:0 8px 2px RGB(173,77,60);
+    }
+    .nav>li{
+      padding-right:15px;
+      list-style:none;
+
+    }
+    .nav>li::before{
+      content:"";     
+      border-left:1px solid;
+      border-left-color:RGBA(0,0,0,.2);
+      margin-right:15px;
+      
+    }
+    .nav>li:first-child::before{
+      display:none;
+    }
+    .nav>li>a{
+      display:inline-block;
+      text-decoration:none;
+      line-height:50px;
+      font-size:13px;
+      font-weight:bolder;
+      font-family:Arial;
+      color:RGB(251,211,209);
+      text-shadow: 1px 1px  6px #000;
+      transition:all 0.2s ease-in;
+    }
+    .nav>li>a:hover{
+transform:rotate(10deg);
+
+    }
+    .nav>
+  </style>
+</head>
+<body>
+    <ul class="nav">
+    	<li><a href="">Home</a></li>
+    	<li><a href="">About Me</a></li>
+    	<li><a href="">Portfolio</a></li>
+    	<li><a href="">Blog</a></li>
+    	<li><a href="">Resources</a></li>
+    	<li><a href="">Contact Me</a></li>
+	</ul>
+</body>
+</html>
