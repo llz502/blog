@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+  html,body{
+    height:100%;
+    margin:0;
+  }
+ body{
+   display:flex;
+   flex-flow:column nowrap;
+   font-size:.9em;
+ }
+    main{
+      flex:1 0 auto;
+      display:flex;
+      
+    }
+    footer{
+      flex:0 0 90px;
+      padding:10px;
+      background-color: rgba(61, 100, 158, .9);
+    }
+    main aside{
+      flex:0 0  40px;
+      display:flex;
+      flex-flow:column nowrap;
+      justify-content:space-around;
+      align-items:center;
+      background-color: #f2f2f2;
+    }
+    aside i{
+      font-size:.9em;
+    }
+    main section.content{
+      flex:1 0 auto;
+      display：flex;
+      flex-flow:column nowrap;
+      border:1px solid;
+    }
+    .content>.music-head{
+      flex: 0 0 280px; /*相同的备忘，不要伸展或收缩 - 固定为 280px*/ 
+      display: flex; 
+      padding: 40px; 
+      background-color: #4e4e4e;
+
+    }
+    .music-list { 
+      flex: 1 0 auto; 
+      list-style-type: none; 
+      padding: 5px 10px 0px; 
+    }
+    li { display: flex; /*段落现在显示在一行上*/ 
+      padding: 0 20px; /*留点呼吸空间*/ 
+      min-height: 50px; } 
+    li p { flex: 0 0 25%; /*这是甜面酱*/ 
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <aside>
+      <i>1</i>
+      <i>2</i>
+      <i>3</i>
+      <i>4</i>
+      <i>5</i>
+      <i>6</i>
+      <i>7</i>
+      <i>8</i>
+    </aside>
+    <section class="content">
+      <div class="music-head">
+        <img src="" alt="">
+        <section class="catty-music">
+          <div>
+            <p>11</p>
+            <p>22</p>
+            <p>33</p>
+          </div>
+          <div>
+            <i>aaa</i>
+            <i>bbb</i>
+            <i>ccc</i>
+          </div>
+        </section>
+      </div>
+      <ul class="music-list">
+        <li>
+          <p>11</p>
+          <p>22</p>
+          <p>22</p>
+          <p>33</p>
+        </li>
+        <li>
+          <p>111</p>
+          <p>222</p>
+          <p>333</p>
+          <p>444</p>
+        </li>
+        <li>
+          <p>1111</p>
+          <p>2222</p>
+          <p>3333</p>
+          <p>4444</p>
+        </li>
+        <li>
+          <p>11111</p>
+          <p>22222</p>
+          <p>33333</p>
+          <p>44444</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>11</footer>
+</body>
+</html>

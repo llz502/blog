@@ -1,0 +1,182 @@
+@importurl("http://www.w3cplus.com/demo/css3/base.css");
+@importurl("http://fonts.googleapis.com/css?family=Yesteryear");
+*,*::after{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height:100%;
+    background:url(bg.jpg);
+    background-size:cover;
+
+}
+.bg{
+    min-height: 100vh;
+    min-width: 100vw;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    z-index:1;
+}
+
+
+.slider{
+    width:1024px;
+    position:absolute;
+    top:0;
+    left:50%;
+    z-index:9999;
+    margin-top:250px;
+    margin-left: -512px;
+    
+}
+.slider>ul{
+    display: flex;
+    text-align: center;
+}
+.slider li{
+    flex: 1 0;
+    list-style: none;
+    
+    display: flex;
+    flex-direction: column;
+    margin:0 7px;
+    align-items: center;
+}
+/*背景缩略图*/
+.slider li::before{
+    position: absolute;
+    top:50px;
+    z-index: 9999;
+    content:"";
+    display:block; 
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-clip: border-box;
+   background-color: transparent;
+   background-origin: padding-box;
+}
+.slider li:nth-of-type(1)::before{
+    background-image: url(./bg1.jpg);
+    background-position: center;
+}
+.slider li:nth-of-type(2)::before{
+
+    background-image: url(./bg2.jpg);
+    background-position: right center;
+   
+}
+.slider li:nth-of-type(3)::before{
+   background-image: url(./bg3.jpg);
+   background-position: right center;
+}
+.slider li:nth-of-type(4)::before{
+    background-image: url(./bg4.jpg);
+   background-position: right center;
+}
+.slider li:nth-of-type(5)::before{
+    background-image: url(./bg5.jpg);
+   background-position: right center;
+}
+/*背景缩略图，文本介绍*/
+.slider li>a{
+    margin-top:150px;
+    flex-grow: 1;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-family: cursive,fantasy ;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.8),
+    -2px -2px 1px rgba(0, 0, 0, 0.3),
+    -3px -3px 1px rgba(0, 0, 0, 0.3);
+    padding-top: 70px;
+    padding-bottom: 20px;
+    border:2px solid #fff;
+    border-radius: 5px;
+}
+.slider li:nth-of-type(1)>a{
+background-color: #02646e;
+}
+.slider li:nth-of-type(2) a{
+background-color: #eb0837;
+}
+.slider li:nth-of-type(3) a{
+background-color: #67b374;
+}
+.slider li:nth-of-type(4) a{
+background-color: #e6674a;
+}
+.slider li:nth-of-type(5) a{
+background-color: #e61061;
+}
+
+@keyframes leftSlide{
+0% {top:0;left: -100vw;}
+50% {top:0;left: 20vh;}
+100% {top:0;left: 0;}
+}
+.leftSlide:target {
+animation-name: leftSlide;
+animation-duration: 2s;
+animation-iteration-count: 1;
+animation-fill-mode:forwards;
+}
+
+@keyframes slideBottom {
+0% { top: 100vh;left:0; }
+50% { top: -20vh;left:0;}
+100% { top: 0;left:0;}
+}
+.bottomSlide:target{
+z-index: 100;
+animation-name: slideBottom;
+animation-duration: 2s;
+animation-iteration-count: 1;
+animation-fill-mode:forwards;                
+}
+
+             @keyframes zoomIn {
+            	0% { top: 0;left:0;transform: scale(0.1); }
+            	50% { top: 0;left:0;transform: scale(2); }
+                100%{top: 0;left:0;transform: scale(1);}
+            }
+            .zoomIn:target{
+				z-index: 100;
+				animation-name: zoomIn;
+				animation-duration: 2s;
+				animation-iteration-count: 1; 
+                animation-fill-mode:forwards;                 
+            }
+             @keyframes zoomOut {
+            	0% { top: 0;left:0;transform: scale(2); }
+            	50% { top: 0;left:0;transform: scale(0.5); }
+                100%{top: 0;left:0;transform: scale(1);}
+            }
+            .zoomOut:target{
+				z-index: 100;
+				animation-name: zoomOut;
+				animation-duration: 2s;
+				animation-iteration-count: 1;     
+                animation-fill-mode:forwards; 
+            }
+            @keyframes rotate {
+				0% { top: 0;left:0;transform: rotate(-360deg) scale(0.1);}
+                100% { top: 0;left:0;transform: rotate(360deg) scale(1);}
+			}
+           .rotate:target{
+				z-index: 100;
+				animation-name: rotate;
+				animation-duration: 2s;
+				animation-iteration-count: 1;     
+                animation-fill-mode:forwards; 
+            }
