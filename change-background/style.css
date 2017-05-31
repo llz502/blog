@@ -1,5 +1,4 @@
-@importurl("http://www.w3cplus.com/demo/css3/base.css");
-@importurl("http://fonts.googleapis.com/css?family=Yesteryear");
+
 *,*::after{
     box-sizing:border-box;
     margin: 0;
@@ -105,78 +104,78 @@ html,body{
     border-radius: 5px;
 }
 .slider li:nth-of-type(1)>a{
-background-color: #02646e;
+    background-color: #02646e;
 }
 .slider li:nth-of-type(2) a{
-background-color: #eb0837;
+    background-color: #eb0837;
 }
 .slider li:nth-of-type(3) a{
-background-color: #67b374;
+    background-color: #67b374;
 }
 .slider li:nth-of-type(4) a{
-background-color: #e6674a;
+    background-color: #e6674a;
 }
 .slider li:nth-of-type(5) a{
-background-color: #e61061;
+    background-color: #e61061;
 }
 
 @keyframes leftSlide{
-0% {top:0;left: -100vw;}
-50% {top:0;left: 20vh;}
-100% {top:0;left: 0;}
+    0% {top:0;left: -100vw;}
+    50% {top:0;left: 20vh;}
+    100% {top:0;left: 0;}
 }
 .leftSlide:target {
-animation-name: leftSlide;
-animation-duration: 2s;
-animation-iteration-count: 1;
-animation-fill-mode:forwards;
+    animation-name: leftSlide;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
 }
 
 @keyframes slideBottom {
-0% { top: 100vh;left:0; }
-50% { top: -20vh;left:0;}
-100% { top: 0;left:0;}
+    0% { top: 100vh;left:0; }
+    50% { top: -20vh;left:0;}
+    100% { top: 0;left:0;}
 }
 .bottomSlide:target{
-z-index: 100;
-animation-name: slideBottom;
-animation-duration: 2s;
-animation-iteration-count: 1;
-animation-fill-mode:forwards;                
+    z-index: 100;
+    animation-name: slideBottom;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;                
 }
 
-             @keyframes zoomIn {
-            	0% { top: 0;left:0;transform: scale(0.1); }
-            	50% { top: 0;left:0;transform: scale(2); }
-                100%{top: 0;left:0;transform: scale(1);}
-            }
-            .zoomIn:target{
-				z-index: 100;
-				animation-name: zoomIn;
-				animation-duration: 2s;
-				animation-iteration-count: 1; 
-                animation-fill-mode:forwards;                 
-            }
-             @keyframes zoomOut {
-            	0% { top: 0;left:0;transform: scale(2); }
-            	50% { top: 0;left:0;transform: scale(0.5); }
-                100%{top: 0;left:0;transform: scale(1);}
-            }
-            .zoomOut:target{
-				z-index: 100;
-				animation-name: zoomOut;
-				animation-duration: 2s;
-				animation-iteration-count: 1;     
-                animation-fill-mode:forwards; 
-            }
-            @keyframes rotate {
-				0% { top: 0;left:0;transform: rotate(-360deg) scale(0.1);}
-                100% { top: 0;left:0;transform: rotate(360deg) scale(1);}
-			}
-           .rotate:target{
-				z-index: 100;
-				animation-name: rotate;
-				animation-duration: 2s;
-				animation-iteration-count: 1;     
-                animation-fill-mode:forwards; 
-            }
+@keyframes zoomIn {
+    0% { top: 0;left:0;transform: scale(0.1); }
+    50% { top: 0;left:0;transform: scale(2); }
+    100%{top: 0;left:0;transform: scale(1);}
+}
+.zoomIn:target{
+    z-index: 100;
+    animation-name: zoomIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1; 
+    animation-fill-mode:forwards;                 
+}
+@keyframes zoomOut {
+    0% { top: 0;left:0;transform: scale(2); }
+    50% { top: 0;left:0;transform: scale(0.5); }
+    100%{top: 0;left:0;transform: scale(1);}
+}
+.zoomOut:target{
+    z-index: 100;
+    animation-name: zoomOut;
+    animation-duration: 2s;
+    animation-iteration-count: 1;     
+    animation-fill-mode:forwards; 
+}
+@keyframes rotate {
+    0% { top: 0;left:0;transform: rotate(-360deg) scale(0.1);}
+    100% { top: 0;left:0;transform: rotate(360deg) scale(1);}
+}
+.rotate:target{
+    z-index: 100;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: 1;     
+    animation-fill-mode:forwards; 
+}
