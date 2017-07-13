@@ -1,0 +1,322 @@
+/*reset-css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+ 
+}
+::after,::before{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}
+em,i{
+    font-style: normal;
+}
+/*main-css*/
+/*body样式*/
+body{
+    font: normal 12px/1.6em Microsoft YaHei,Tahoma,simsun;
+    color: #666;
+    min-width: 1240px;
+    margin: 0 auto;
+    background: #f7f8f8;
+}
+/*整体layout*/
+.layout{
+    width:1240px;
+    margin:0 auto;
+}
+/*伪元素清除浮动*/
+.clearfix::after{
+    display:block;
+    content: '';
+    clear: both;
+}
+/*兼容IE*/
+.clearfix{
+    zoom:1;
+}
+/*header-css*/
+.header{
+    height: 840px;
+    overflow: hidden; 
+    background: url(../resource/pic-big-v7.jpg) no-repeat center 90px; 
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+.header-close{
+    height: 440px;
+    background-position: -415px 90px;
+    background-image: url(../resource/pic-back-v7.jpg);
+    background-repeat: no-repeat;
+    background-color: red;
+}
+
+.top{
+    height: 90px;
+    position: relative;
+    z-index: 0;
+    background: #0b0b0b;
+}
+/*导航*/
+.nav{
+    
+    margin-left: 191px;
+    float:left;
+}
+/*主要导航*/
+.nav>.nav-main{
+    
+}
+.nav .nav-main>li{
+    float: left;
+    width: 120px;
+}
+.nav .nav-main>li a{
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 22px;
+    text-align: center;
+    color: #fafafa;
+    font-size: 18px;
+}
+.nav .nav-main>li span{
+    display: block;
+    font-size: 10px;
+    color: #838383;
+    font-family: 'Tahoma';
+    text-transform: uppercase;
+}
+/*下拉导航*/
+
+.nav>.subNav{
+    display: none;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background: rgba(0,0,0,0.7);
+}
+.nav:hover>.subNav{
+    display: block;
+}
+.nav .subNav-inner{
+    
+}
+.nav .subNav-items{
+    margin-left: 191px;
+}
+.nav .subNav-item{
+    float: left;
+    width: 120px;
+}
+.nav .subNav-item>a{
+    display: block;
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    color: #e1e1e1;
+    font-size: 14px;
+    text-align: center;
+}
+.nav .subNav-item i{
+
+}
+/*搜索框以及app下载*/
+.top .icons{
+    float: left;
+}
+.top .icons>.icon{
+    float: left;
+    width: 40px;
+    height: 90px;
+    text-align: center;
+}
+.top .icons>.top-search{
+    margin-top: 0px;
+    margin-left: 12px;
+}
+.top .icons>.top-app{
+    margin-top: 0px;
+    margin-left: 8px;
+}
+.top .icons>.icon>.icon-search{
+    display: block;
+    width: 27px;
+    height: 27px;
+    margin-top: 25px;
+    background: url(../resource/spr.png) no-repeat -8px 0;
+}
+.top .icons>.icon>.icon-app{
+    display: block;
+    width: 21px;
+    height: 27px;
+    margin-top: 25px;
+    background: url(../resource/spr.png) no-repeat -45px 0;
+    
+}
+/*用户登录区域*/
+.top-user{
+    position: relative;
+    float: right;
+    margin-top:0px;
+    padding-bottom: 8px;
+}
+.top-user>.top-user-info{
+}
+.top-user .top-user-aside{
+    float: left;
+    position: relative;
+
+}
+.top-user .top-user-mask{
+    margin-top: 8px;
+    margin-right: 22px;
+    width: 74px;
+    height: 74px;
+    background: url(../resource/spr.png) no-repeat 0 -169px;
+}
+.top-user img{
+    position: relative;
+    z-index: -1;
+    margin-left: 4px;
+    margin-top: 4px;
+    border-radius: 33px;
+
+}
+.top-user .top-user-main{
+    padding-top: 18px;
+    overflow: hidden;
+    zoom: 1;
+    margin-right: 33px;
+}
+.top-user .top-user-unlogin{
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 0;
+}
+.top-user .top-user-unlogin>em{
+    color: #dfb257;
+    text-decoration: underline;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.top-user .top-user-tips{
+    color: #999;
+    font-size: 12px;
+}
+/*用户登录提示*/
+.top-user>.top-user-drop{
+    position: absolute;
+    top:100%;
+    left:0;
+    width: 100%;
+    padding-top: 20px;
+    z-index: 3;
+    background: rgba(27,27,27,0.9);
+    display: none;
+}
+.top-user:hover>.top-user-drop{
+    display: block;
+}
+.top-user .top-user-drop-tips{
+    padding: 10px 30px 30px;
+    text-align: left;
+    color: #868686;
+    font-size: 14px;
+}
+.top-user .top-link-personal{
+    display: block;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    background: #161413;
+    color: #e0e0e0;
+    font-size: 12px;
+    text-align: center;
+}
+/*header-inner-css*/
+.header-inner{
+    position: relative;
+}
+.header-inner>.logo{
+    position: absolute;
+    left: -8px;
+    top: -85px;
+    width:190px;
+    height:100px;
+    background: url(../resource/spr.png) no-repeat 0 -30px;
+}
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+.header-inner>.top-act{
+    position: relative;
+    height: 310px;
+    padding-top: 40px;
+    z-index: 2;
+    transition: all .8s ease;
+}
+.header-inner .top-act-name{
+    position: relative;
+    height: 50px;
+    margin-bottom: 10px;
+    color: #ffcb60;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,232,184,1)), to(rgba(175,133,48,1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header-inner .top-act-name>span{
+    position: absolute;
+    left: 0;
+    color: red;
+    text-shadow: 0 0 10px #000;
+    z-index: -3;
+}
+.header-inner .top-act-desc{
+width: 550px;
+    height: 60px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #dbdbdb;
+    line-height: 30px;
+    overflow: hidden;
+    text-shadow: 0 0 5px #000;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+}
+.header-inner .top-act-video{
+    position: relative;
+    z-index: 2;
+    width: 220px;
+    height: 120px;
+    margin-bottom: 25px;
+    border: 1px solid #987630;
+    box-shadow: inset 0 0 2px #000;
+    background: url(../resource/pic-small-v7.jpg) no-repeat center center;
+}
+.header-inner .top-small-video{
+    display: block;
+    width: 220px;
+    height: 120px;
+}
+.header-inner .top-act a{
+    
+}
+
+
+
