@@ -1,0 +1,25 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+     overflow: hidden;
+    }
+    ul{
+      list-style: none;
+    }
+    #app{
+      background: #ddd;
+      display: block;
+    }
+    .actions{
+      position: fixed;
+      top: 0;
+      left: 0; 
+      width: 100%;
+      padding: 4px;
+    }
+    .actions .icon{
+        width:30px;
+        height:30px;
+    }
